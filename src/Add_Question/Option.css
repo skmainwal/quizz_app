@@ -19,3 +19,22 @@
 .option_delete {
   font-size: 25px;
 }
+
+.option_delete:hover {
+  color: red;
+}
+
+.check {
+  font-size: 30px;
+  cursor: pointer;
+}
+.check:hover {
+  color: greenyellow;
+}
+
+.box {
+  justify-content: center;
+  /* align-items: center; */
+  align-content: center;
+  text-align: center;
+}

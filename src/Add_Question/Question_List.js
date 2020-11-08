@@ -1,38 +1,47 @@
 import React from "react";
-import Question_Api from "../My_Api/Question_Api";
+
 import Show_Question from "./Show_Question";
-import { useSelector, useDispatch } from "react-redux";
-import shortid from "shortid";
-import { addQuestionAction } from "../store/store";
-import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux";
+
+import { useHistory, Link } from "react-router-dom";
 function Question_List() {
   const history = useHistory();
-  // console.log(Question_Api);
-  const dispatch = useDispatch();
 
   const state = useSelector((state) => state);
-
-  // console.log("this is state", state);
-
-  const question = {
-    id: shortid.generate(),
-    text: "",
-    choices: "",
-    correct: "",
-  };
+  console.log("thie is my staete ", state);
 
   const questonHandler = () => {
-    dispatch(addQuestionAction(question));
+    // dispatch(addQuestionAction(question));
     history.push("/question");
+  };
+
+  const sampleSubmitHandler = () => {
+    //  history.push("/finalquestionPaper");
+    if (state.question.length === 0) {
+      history.push("/question_list");
+    }
   };
 
   return (
     <div className="container">
-      {/* {Question_Api.map((question) => {
-        return <Show_Question question={question} />;
-      })} */}
+      <div>
+        <h2>Quizz Sample</h2>
+      </div>
+      <Link
+        to={`/finalquestionPaper/final_List`}
+        className="btn btn-dark float-right"
+        onClick={sampleSubmitHandler}
+      >
+        Submit Sample
+      </Link>
 
-      <button onClick={questonHandler}> Add Question</button>
+      {state.question.map((que, index) => {
+        return <Show_Question que={que} index={+index} />;
+      })}
+
+      <button className="btn btn-dark" onClick={questonHandler}>
+        Add Question
+      </button>
     </div>
   );
 }

@@ -1,14 +1,30 @@
 .card {
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-  width: 400px;
+  width: 500px;
   justify-content: center;
   align-items: center;
   margin: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+  cursor: pointer;
+  font-family: "Courgette", cursive;
+  background-color: #e8e8e8;
 }
 
 .show_question_card {
   display: flex;
   flex-wrap: wrap;
+  font-family: "Courgette", cursive;
+  background-color: #e8e8e8;
+}
+.card:hover {
+  /* z-ind
+  /* background-color: #e56021; */
+  color: #e56021;
+}
+.card:active {
+  color: #e56021;
+}
+
+.card:focus {
+  color: #e56021;
 }

@@ -1,6 +1,7 @@
 .question {
   border: 1px solid grey;
   border: none;
+  font-family: "Courgette", cursive;
 }
 
 .question_input {
@@ -10,6 +11,9 @@
   border: none;
   border-style: hidden;
   border-bottom: dotted;
+  font-size: 20px;
+  margin-top: 50px;
+  font-family: "Courgette", cursive;
 }
 
 .add_option {
@@ -21,15 +25,27 @@
   justify-content: center;
   display: flex;
   background-color: #f0f0f0;
+  font-family: "Courgette", cursive;
+
   /* margin-top: 10px; */
+}
+.option_form {
+  margin-left: 30px;
+  font-family: "Courgette", cursive;
 }
 
 .question_option {
   margin-top: 150px;
   text-align: center;
   justify-content: center;
+  font-family: "Courgette", cursive;
 }
 
 input::placeholder {
   text-align: center;
+}
+
+.ques {
+  font-size: 20px;
+  font-family: "Courgette", cursive;
 }
