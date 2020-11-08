@@ -3,7 +3,8 @@ import React from "react";
 import Card from "./Card";
 
 function Show_Question({ que, index, id }) {
-  console.log("this is my index ", index);
+  // console.log("this is my index ", index);
+
   return (
     <>
       <div className="container">

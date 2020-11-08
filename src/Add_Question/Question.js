@@ -18,7 +18,7 @@ function Question() {
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
 
-  console.log("this my added question ", state);
+  // console.log("this my added question ", state);
 
   const [text, setText] = useState("");
 
@@ -34,7 +34,7 @@ function Question() {
   const questionTitlehandler = (text) => {
     // e.preventDefault();
     setText(text);
-    console.log(text);
+    // console.log(text);
 
     dispatch(addQuestionText(text));
   };
@@ -78,7 +78,7 @@ function Question() {
       }
     });
 
-    console.log("this is my new Optin", new_option);
+    // console.log("this is my new Optin", new_option);
     setOption("");
     dispatch(AddCorrectAns(correctArray));
     dispatch(updateOpt(new_option));

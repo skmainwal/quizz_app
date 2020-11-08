@@ -9,7 +9,7 @@ function Option({ text, id, clicked, checked }) {
           <i className=" fa fa-trash option_delete"></i>
         </button>
         <div className="pl-3 mt-3 mr-2  ">
-          <span class="  material-icons check" onClick={checked}>
+          <span className="  material-icons check" onClick={checked}>
             check_circle_outline
           </span>
         </div>

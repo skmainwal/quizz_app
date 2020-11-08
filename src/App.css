@@ -4,13 +4,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  object-fit: contain;
 }
 
 .home {
-  margin-left: 750px;
   margin-top: 300px;
-  /* align-items: center;
-  align-content: center; */
+
+  justify-content: center;
+  text-align: center;
 }
 .create_quizz {
   font-size: 30px !important;

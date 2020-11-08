@@ -8,7 +8,7 @@ function Question_List() {
   const history = useHistory();
 
   const state = useSelector((state) => state);
-  console.log("thie is my staete ", state);
+  // console.log("thie is my staete ", state);
 
   const questonHandler = () => {
     // dispatch(addQuestionAction(question));
